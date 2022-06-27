@@ -7,7 +7,8 @@ pluginManagement {
 
 plugins {
 	id "com.gradle.enterprise" version "3.6.1"
-	id "io.spring.ge.conventions" version "0.0.7"
+	// 注解后，就不会再进行身份验证了
+//	id "io.spring.ge.conventions" version "0.0.7"
 }
 
 include "spring-aop"
