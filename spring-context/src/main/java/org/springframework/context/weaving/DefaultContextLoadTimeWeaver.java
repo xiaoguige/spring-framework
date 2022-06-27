@@ -101,7 +101,7 @@ public class DefaultContextLoadTimeWeaver implements LoadTimeWeaver, BeanClassLo
 		}
 	}
 
-	/*
+	/**
 	 * This method never fails, allowing to try other possible ways to use an
 	 * server-agnostic weaver. This non-failure logic is required since
 	 * determining a load-time weaver based on the ClassLoader name alone may

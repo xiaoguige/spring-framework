@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.3.10'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //添加完要构建一下，否则代码中无法引用
+    implementation(project(":spring-context"))
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    useJUnitPlatform()
+}
